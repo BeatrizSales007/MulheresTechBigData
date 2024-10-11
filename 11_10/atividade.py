@@ -8,14 +8,14 @@ while True:
     
     if idade < 18:
         print("Menor de 18 anos não pode se candidatar.")
-        continue
+        
+    else:
+        telefone = input("Telefone: ")
+        email = input("E-mail: ")
+        formacao = input("Formação Acadêmica: ")
+        experiencia = input("Experiência Profissional: ")
 
-    telefone = input("Telefone: ")
-    email = input("E-mail: ")
-    formacao = input("Formação Acadêmica: ")
-    experiencia = input("Experiência Profissional: ")
-
-    print(f"\nCandidato cadastrado: Nome: {nome}, Idade: {idade}, Telefone: {telefone}, E-mail: {email}, Formação: {formacao}, Experiência: {experiencia}")
-    
-    if input("\nDeseja cadastrar mais um candidato? (s/n): ").lower() != 's':
-        break
+        print(f"\nCandidato cadastrado: Nome: {nome}, Idade: {idade}, Telefone: {telefone}, E-mail: {email}, Formação: {formacao}, Experiência: {experiencia}")
+        
+        if input("\nDeseja cadastrar mais um candidato? (s/n): ").lower() != 's':
+            break
